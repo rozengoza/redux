@@ -33,3 +33,22 @@
       - [ ] follows a unidirecitonal pattern, which means the data flows in one direction through our application
       - [ ] it transfers data via actions, reducers, dispatch and selectors
 
+  # Redux Introduction
+    - [ ] every components that require data communicates / calls the store to  get the data
+    - [ ] store is a centrallized store
+    - [ ] with rules ensuring that the state can only be updated in a predictable fashion
+
+  # Redux main topics
+    # Action
+      - What to do?
+
+    # Reducers
+      - How to do?
+
+    # Store
+      -  Object which holds the state of the application
+
+    # Functions assosiated with store
+      - createStrore()
+      - dispatch(action)
+      - getState()
