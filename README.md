@@ -8,7 +8,7 @@
     - [x] context, useContext API -> Consumer ,  Provider.
     - [x] alternatively, we can use Redux for global state management
 
-### USECONTEXT, context API
+### useContext, context API
   - [ ] Lets try to understand useContext, context API 
     - [x] Parent Component -> Child Component A -> Child Component B -> Child Component C
           - Concept :-  If parent component has a data that is only needed to  Child Component C, parent component passes prop to A, then A to B and  finally B to C finally. We are passing to A and B even though data is not needed in these components. So, react Hooks  provides context API that allows us to easily access data at different levels of the component tree, without having to pass the props to each level.
@@ -19,5 +19,17 @@
           - Demerits :- 
             - [x] causes performance issue as  it causes component to  re-render whenever the context value changes, context value is updated frequently
             - [x] less type safety
+
+
+## useContext vs React Redux
+  - [ ] Difference is based on usage context and scale of management scope
+    - [x] useContext is suitable for managing smaller-scale states, redux is used for complex state management share across entire application 
   
+
+  ## Let's dig into react-redux
+    - [ ] provides a single global state store to manage the entire application's state
+    - [ ] uses concept of actions and reducers to update the state
+    - [x] [x] data flow :-
+      - [ ] follows a unidirecitonal pattern, which means the data flows in one direction through our application
+      - [ ] it transfers data via actions, reducers, dispatch and selectors
 
