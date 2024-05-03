@@ -52,3 +52,53 @@
       - createStrore()
       - dispatch(action)
       - getState()
+  
+  ## Action 
+    - Plain javascript object that has a type field and only tells what to do 
+      - [ ] return {
+        type: 'INCREMENT',
+        payload: num
+      }
+      - [ ] Incremnet : When user clicks on increment button
+      - [ ] Decrement : When user clicks on decrement button
+
+      - [x] Action Creator
+        - [ ] export const incNumber = (num) => {
+          return {
+            type: 'INCREMENT',
+            payload: num
+          }
+        }
+        - [ ] can be done uing dispatch
+  ## Reducer
+    - [x] Reducers are functions that take the current state and an action as arguments, and return a new state result
+
+    - format :- 
+      const initialState = 0
+
+      const changeTheNumber = ( state = initialState, action) => {
+        switch (action.type){
+          case "INCREMENT": return state + action.payload;
+          case "DECREMENT" : return state - 1;
+          default: return state
+        }
+      }
+
+  ## Store
+    - brings together state, action and reducers that make up our app
+    - we will only have a single store in our redux app 
+    - every redux has a single root reducer function
+
+    import { createStore } from "redux";
+    const store = createStore(rootReducers);
+
+  # Redux Principles
+    - [ ] Single Source of truth
+      - [x] global state of our applicaiton is stored as an object inside a single store
+    - [ ] State is read only
+      - [x] The only way to change the state is to  dispatch an action. 
+    - [ ] Immutability, one-way data flow, predictability of outcome
+    - [ ] Changes are made with pure reducer functions
+    
+
+  
