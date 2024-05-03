@@ -1,11 +1,21 @@
 import React from 'react';
-import  { FirstName }  from '../App';
+import  { FirstName, LastName }  from '../App';
 const CompC =() => {
     return(
-        <>hi
+        <>
         <FirstName.Consumer>
             {(fname) => {
-                return <h1> My name is {fname}</h1>
+                return( 
+                <LastName.Consumer>
+                    {
+                        (lname) => {
+                            return (
+                                <h1> My name is {fname} {lname}</h1>
+                            )
+                        }
+                    }
+                    </LastName.Consumer>
+            )
             }}
         </FirstName.Consumer>
         </>
