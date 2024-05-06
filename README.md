@@ -101,4 +101,11 @@
     - [ ] Changes are made with pure reducer functions
     
 
-  
+  ## Provider
+    - [ ] Provide access of centrallized store to every  components of the app
+
+## Road Map 
+  - [x] Define actions that we are going to perform into our application
+  - [x] Define reducers :-  what task to perform when an action is called, store data into store
+  - [x] Store :- pass data of app into store
+  - [x] useSelector,  useDispatch :- to get data amd call the reducer function
